@@ -12,18 +12,12 @@ This is a standalone composer package for Custom [WPCS](https://github.com/WordP
 Use Composer to install the package.
 
 ```bash
-composer require --dev meom/phpcs-composer:dev-master
+composer require --dev MEOM/phpcs-composer:dev-main
 ```
 
 ## Usage
 
 Lint your PHP files with the following command:
-
-```bash
-./vendor/bin/phpcs .
-```
-
-Then you can lint with the following command:
 
 ```bash
 ./vendor/bin/phpcs .
