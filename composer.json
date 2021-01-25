@@ -1,7 +1,6 @@
 {
     "name": "MEOM/phpcs-composer",
     "type": "phpcodesniffer-standard",
-    "version": "dev-main",
     "license": "MIT",
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "*",
