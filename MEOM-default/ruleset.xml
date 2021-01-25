@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Foxland-Default">
+<ruleset name="MEOM-Default">
     <!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
     <!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
 
