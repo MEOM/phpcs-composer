@@ -1,0 +1,27 @@
+{
+    "name": "MEOM/phpcs-composer",
+    "type": "phpcodesniffer-standard",
+    "version": "dev-master",
+    "license": "MIT",
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "phpcompatibility/phpcompatibility-wp": "^2",
+        "wp-coding-standards/wpcs": "*"
+    },
+    "prefer-stable" : true,
+    "authors": [
+        {
+            "name": "MEOM",
+            "email": "tech@meom.fi"
+        }
+    ],
+    "scripts": {
+      "install-cs": [
+        "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+        "\"vendor/bin/phpcs\" --config-set default_standard MEOM-Default"
+      ],
+      "post-install-cmd": "@install-cs",
+      "post-update-cmd": "@install-cs",
+      "lint": "\"vendor/bin/phpcs\" . "
+    }
+}
