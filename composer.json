@@ -1,5 +1,5 @@
 {
-    "name": "MEOM/phpcs-composer",
+    "name": "meom/phpcs-composer",
     "type": "phpcodesniffer-standard",
     "license": "MIT",
     "require": {
