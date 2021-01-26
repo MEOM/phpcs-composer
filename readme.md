@@ -46,8 +46,6 @@ If you don't have PHP codesniffer installed globally, you might need to
 
 ```json
 {
-    "phpcs.executablePath": "/path/to/vendor/bin/phpcs"
+    "phpcs.executablePath": "./vendor/bin/phpcs"
 }
 ```
-
-Replace `/path/to/` part to your path, for example `/Users/samikeijonen/projects/test/vendor/bin/phpcs`.
