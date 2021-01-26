@@ -29,6 +29,20 @@ Or give path to lint theme folder, for example:
 ./vendor/bin/phpcs htdocs/wp-content/themes/theme-name
 ```
 
+## Fixing issues using PHPCBF command
+
+Some of the issue can be fixed using `phpcbf` command:
+
+```bash
+./vendor/bin/phpcbf .
+```
+
+Or give path to fix theme folder, for example:
+
+```bash
+./vendor/bin/phpcbf htdocs/wp-content/themes/theme-name
+```
+
 ## IDE Integration
 
 Some IDE integrations of PHPCS fail to register the MEOM-Default ruleset. In order to rectify this, place `.phpcs.xml.dist` at your project root:
