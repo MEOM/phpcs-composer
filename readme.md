@@ -23,6 +23,12 @@ Lint your PHP files with the following command:
 ./vendor/bin/phpcs .
 ```
 
+Or give path to lint theme folder, for example:
+
+```bash
+./vendor/bin/phpcs htdocs/wp-content/themes/theme-name
+```
+
 ## IDE Integration
 
 Some IDE integrations of PHPCS fail to register the MEOM-Default ruleset. In order to rectify this, place `.phpcs.xml.dist` at your project root:
