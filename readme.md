@@ -12,7 +12,7 @@ This is a standalone composer package for Custom [WPCS](https://github.com/WordP
 Use Composer to install the package.
 
 ```bash
-composer require --dev MEOM/phpcs-composer:dev-main
+composer require --dev meom/phpcs-composer:dev-main
 ```
 
 ## Usage
