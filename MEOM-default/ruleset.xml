@@ -99,6 +99,9 @@
 
         <!-- Allow short array syntax. -->
         <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+
+        <!-- Do not force Yoda conditions. -->
+        <exclude name="WordPress.PHP.YodaConditions" />
     </rule>
 
     <!-- Verify that the text_domain is set to the desired text-domain.
