@@ -69,3 +69,7 @@ If you don't have PHP codesniffer installed globally, you might need to
     "phpcs.executablePath": "./vendor/bin/phpcs"
 }
 ```
+
+P.S. Windows is looking for file `./vendor/bin/phpcs.bat`. If that's not generated automatically in `./vendor/bin/` for some reason, test path `./vendor/squizlabs/php_codesniffer/bin/phpcs`.
+
+`.bat` files should be in that folder.
