@@ -45,12 +45,12 @@ Or give path to fix theme folder, for example:
 
 ## IDE Integration
 
-Some IDE integrations of PHPCS fail to register the MEOM-Default ruleset. In order to rectify this, place `.phpcs.xml.dist` at your project root:
+Some IDE integrations of PHPCS fail to register the MEOM-default ruleset. In order to rectify this, place `.phpcs.xml.dist` at your project root:
 
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Project Rules">
-    <rule ref="MEOM-Default" />
+    <rule ref="MEOM-default" />
 </ruleset>
 ```
 

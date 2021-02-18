@@ -16,7 +16,7 @@
     "scripts": {
       "install-cs": [
         "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-        "\"vendor/bin/phpcs\" --config-set default_standard MEOM-Default"
+        "\"vendor/bin/phpcs\" --config-set default_standard MEOM-default"
       ],
       "post-install-cmd": "@install-cs",
       "post-update-cmd": "@install-cs",
