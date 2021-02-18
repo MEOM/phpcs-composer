@@ -21,7 +21,7 @@
      -->
     <arg value="psvn"/>
 
-    <!-- Show results with colors -->
+    <!-- Show results with colors. -->
     <arg name="colors"/>
 
     <!-- Check up to 8 files simultanously. -->
