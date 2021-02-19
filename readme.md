@@ -29,6 +29,12 @@ Or give path to lint theme folder, for example:
 ./vendor/bin/phpcs htdocs/wp-content/themes/theme-name
 ```
 
+Note that by default warning are not displayed. You can change that with `--severity` flag like this:
+
+```bash
+./vendor/bin/phpcs --severity=1 htdocs/wp-content/themes/theme-name
+```
+
 ## Fixing issues using PHPCBF command
 
 Some of the issue can be fixed using `phpcbf` command:
@@ -42,6 +48,14 @@ Or give path to fix theme folder, for example:
 ```bash
 ./vendor/bin/phpcbf htdocs/wp-content/themes/theme-name
 ```
+
+Note that by default warnings are not fixed. You can fix warnings also  with `--severity` flag like this:
+
+```bash
+./vendor/bin/phpcbf --severity=1 htdocs/wp-content/themes/theme-name
+```
+
+More info about [fixing PHPCS errors automatically](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically).
 
 ## IDE Integration
 
