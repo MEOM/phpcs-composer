@@ -7,8 +7,6 @@
         "phpcompatibility/phpcompatibility-wp": "*",
         "wp-coding-standards/wpcs": "dev-develop"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "authors": [
         {
             "name": "MEOM",
