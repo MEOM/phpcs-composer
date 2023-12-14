@@ -129,7 +129,7 @@
             as set in the "Requires at least" tag in the readme.txt file. -->
     <rule ref="WordPress.WP.DeprecatedFunctions">
         <properties>
-            <property name="minimum_supported_version" value="5.0" />
+            <property name="minimum_wp_version" value="6.0" />
         </properties>
     </rule>
 </ruleset>
