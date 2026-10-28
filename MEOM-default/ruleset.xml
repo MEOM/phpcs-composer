@@ -16,10 +16,9 @@
     <!-- Pass some flags to PHPCS:
          p flag: Show progress of the run.
          s flag: Show sniff codes in all reports.
-         v flag: Print verbose output.
          n flag: Do not print warnings.
      -->
-    <arg value="psvn"/>
+    <arg value="psn"/>
 
     <!-- Show results with colors. -->
     <arg name="colors"/>
@@ -37,9 +36,6 @@
     <!-- For help in understanding this testVersion:
             https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
     <config name="testVersion" value="8.0-"/>
-
-         <!-- Check all files in this directory and the directories below it. -->
-    <file>.</file>
 
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
@@ -62,7 +58,7 @@
         <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
         <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned" />
         <exclude name="WordPress.Arrays.ArrayIndentation.MultiLineArrayItemNotAligned" />
-        <exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
+        <exclude name="Universal.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
         <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
         <exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent" />
 
@@ -85,15 +81,13 @@
         <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeKeyFound" />
         <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound" />
         <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace" />
-        <exclude name="PHPCompatibility.PHP.NewFunctionArrayDereferencing.Found" />
+        <exclude name="PHPCompatibility.Syntax.NewFunctionArrayDereferencing.Found" />
 
         <!-- General WordPress stuff we like to overrule -->
         <exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 
         <!-- Very strict VIP/discouraged rules that are not needed -->
-        <exclude name="WordPress.VIP.AdminBarRemoval.RemovalDetected" />
-        <exclude name="WordPress.XSS.EscapeOutput.OutputNotEscaped" />
-        <exclude name="WordPress.Functions.DontExtract.extract_extract" />
+        <exclude name="WordPress.PHP.DontExtract.extract_extract" />
         <exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" />
 
         <!-- Translations related, not always necessary, too strict -->
@@ -109,10 +103,12 @@
     </rule>
 
     <!-- Verify that the text_domain is set to the desired text-domain.
-    Multiple valid text domains can be provided as a comma-delimited list. -->
+    Add more <element> nodes to allow several text domains. -->
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="kala" />
+            <property name="text_domain" type="array">
+                <element value="kala"/>
+            </property>
         </properties>
     </rule>
 
