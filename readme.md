@@ -55,7 +55,7 @@ Note that by default warnings are not fixed. You can fix warnings also  with `--
 ./vendor/bin/phpcbf --severity=1 htdocs/wp-content/themes/theme-name
 ```
 
-More info about [fixing PHPCS errors automatically](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically).
+More info about [fixing PHPCS errors automatically](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically).
 
 ## IDE Integration
 
