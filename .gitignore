@@ -10,6 +10,9 @@ dist/
 # Composer vendor folder.
 vendor/
 
+# This is a library: consuming projects resolve versions in their own lock file.
+composer.lock
+
 # VS Code settings folder.
 .vscode
 
