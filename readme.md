@@ -29,6 +29,8 @@ Or give path to lint theme folder, for example:
 ./vendor/bin/phpcs htdocs/wp-content/themes/theme-name
 ```
 
+Always give at least one path, either on the command line or as `<file>` entries in the project's `.phpcs.xml.dist`. The ruleset does not define a file list, so `./vendor/bin/phpcs` without a path stops with "You must supply at least one file or directory to process".
+
 Note that by default warning are not displayed. You can change that with `--severity` flag like this:
 
 ```bash
